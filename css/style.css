@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-image: url("../img/fond.png");
+    width: 100%;
+    background-position: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section{
+    width: 100%;
+    
+}
+
+img{
+    width: 100%;
+}
+/* ------------CSS QUI SE RÉPÈTE---------*/
+
+.positionRelative{
+    position: relative;
+    
+    
+}
+
+.positionAbsolute{
+    position: absolute;
+  
+/* -------VIRAGE------ */
+    
+}
+.virage{
+    width:150%;
+    transform: translateX(-35%) translateY(1%);
+    z-index: 5000;
+
+}
+
+/* ----------------TITRE FIXE--------------*/
+.logo{
+    width: 400px;
+    top: 1%;
+    left: 40%;
+    position: fixed;
+   
+}
+
+/* -----------TOAD KART BLEU---------- */
+
+
+@keyframes toad{
+    98%{transform: translate(100px, 150px);}
+    100%{transform: translate(-10px, 150px);}    
+} 
+
+
+.toad{
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    right: 35%;
+    animation: toad 3s infinite;
+}
+
+/* --------------COQUILLE VERTE--------- */
+
+.cqVerte{
+    width: 150px;
+    top: 20%;
+    left: 39%;
+}  
+
+/* ------------------KIRBY----------- */
+
+@keyframes kirby{
+    100%{transform: scale(1.2);}
+}
+
+.kirby{
+    width: 200px;
+    top: 22%;
+    left: 35%;
+    animation: kirby 0.5s infinite;
+
+}
+
+/* -----------WARIO----------- */
+
+.wario{
+    width: 500px;
+    top: 25%;
+    left: 6%;
+}
+
+/* ---------COQUILLE ROUGE-------- */
+
+
+@keyframes cqRouge{
+    to{ transform: scale(4) translate(40px,80px);}
+}
+.cqrouge{
+    width: 70px;
+    top:28%;
+    left: 14%;
+    animation: cqRouge 1.5s infinite;
+    z-index: 1000;
+
+}
+
+/* ----------BOWSER----------- */
+
+
+@keyframes bowser{
+    to{transform: rotate(30deg);}
+}
+.bowser{
+    width: 1200px;
+    top: 30%;
+    left: -10%;
+    z-index: 2000;
+    animation: bowser 1s infinite;
+}
+
+/* ----------CADEAU--------- */
+
+@keyframes cadeau{
+    to{transform: translate(400px, 0px) rotate(200deg)}
+}
+.cadeau{
+    width: 200px;
+    top:50% ;
+    left: 35%;
+    animation: cadeau 1s infinite;
+}
+
+
+/* -------SECTION 2-------- */
+
+
+.virage2{
+    width: 200%;
+    transform: translateX(-50%) translateY(-20%);
+    z-index: -1000;
+}
+
+/* ------GHOST------ */
+
+
+@keyframes ghost{
+    to{transform: scale(2);}
+}
+.ghost{
+    width: 150px;
+    margin-top: 15%;
+    margin-left: 50%;
+    /* z-index: 7000; */
+    animation: ghost 1s infinite;
+}
+
+/* ------YOSHI-----------*/
+
+
+@keyframes yoshi{
+    from{ opacity: 1;}
+    to{transform: translate(1200px, 20px);opacity: 0;}
+}
+.yoshi{
+    width: 400px;
+    margin-top: 30%;
+    margin-left:40%;
+    animation: yoshi 1s infinite;
+}
+
+/* -----------PEACH----------- */
+@keyframes peach{
+    0%{transform:translateX(-60px)} 
+    40%{transform: rotate(-720deg)}
+}
+.peach{
+    width: 400px;
+    margin-top: 55%;
+    margin-left: 15%;
+    animation: peach 3s infinite;
+}
